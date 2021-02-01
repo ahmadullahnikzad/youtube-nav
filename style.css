@@ -1,0 +1,241 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  html html {
+    font-size: 8px;
+  }
+}
+
+sidebar {
+  background-color: #303030;
+  padding: 1rem;
+  max-width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+sidebar .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+sidebar .title svg {
+  height: 4rem;
+}
+
+sidebar .title span {
+  margin-left: .3rem;
+  color: rgba(233, 233, 233, 0.774);
+  font-size: clamp(1.7rem, 3vw, 2rem);
+}
+
+sidebar::-webkit-scrollbar {
+  width: 1rem;
+  border-radius: 1rem;
+}
+
+sidebar::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #636363;
+}
+
+sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #4a4a4a;
+}
+
+sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+sidebar ul .subtitle {
+  font-size: clamp(1.7rem, 1.9vw, 2rem);
+  color: rgba(255, 255, 255, 0.774);
+  padding: 1.2rem 1.2rem .5rem 1.2rem;
+}
+
+sidebar ul li a {
+  gap: .8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-size: clamp(1.5rem, 1.7vw, 1.8rem);
+  color: rgba(233, 233, 233, 0.774);
+  padding: 1rem 1.2rem;
+  border-radius: .2rem;
+}
+
+sidebar ul li a svg {
+  height: 2rem;
+  fill: #969696;
+}
+
+sidebar ul li a:hover {
+  background-color: #171717;
+  color: #fff;
+}
+
+sidebar ul li a:hover svg {
+  fill: #c9c9c9;
+}
+
+nav {
+  background-color: #303030;
+  position: relative;
+  z-index: 5;
+  padding: 1rem;
+  margin: 0;
+}
+
+nav .right, nav .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .right li, nav .left li {
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  nav .right li, nav .left li {
+    padding: 0 .5rem;
+  }
+}
+
+@media (max-width: 578px) {
+  nav .right li, nav .left li {
+    padding: 0 .3rem;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul li {
+  width: 100%;
+}
+
+nav ul li input {
+  margin: auto;
+  width: 80%;
+  padding: 1rem;
+  background-color: #171717;
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  border-radius: .4rem;
+  color: rgba(233, 233, 233, 0.774);
+  display: block;
+}
+
+@media (max-width: 768px) {
+  nav ul li input {
+    display: none;
+  }
+}
+
+nav ul li .search {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav ul li .search {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+nav ul li a {
+  background-color: #4a4a4a;
+  padding: .5rem .8rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: .4rem;
+  color: rgba(233, 233, 233, 0.774);
+  word-wrap: none;
+}
+
+@media (max-width: 768px) {
+  nav ul li a {
+    padding: .2rem .3rem;
+  }
+}
+
+@media (max-width: 578px) {
+  nav ul li a {
+    padding: .3rem .1rem;
+  }
+}
+
+nav ul li a:hover {
+  background-color: #3d3d3d;
+}
+
+nav ul li a svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: rgba(208, 208, 208, 0.774);
+}
+
+@media (max-width: 768px) {
+  nav ul li a svg {
+    height: 2rem;
+  }
+}
+
+@media (max-width: 578px) {
+  nav ul li a svg {
+    height: 1.5rem;
+  }
+}
+
+nav ul li a:hover svg {
+  fill: rgba(255, 255, 255, 0.774);
+}
+/*# sourceMappingURL=style.css.map */
